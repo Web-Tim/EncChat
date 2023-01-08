@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EncChat:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EncChat_jar</output-path>
+    <root id="archive" name="EncChat.jar">
+      <element id="module-output" name="EncChat" />
+    </root>
+  </artifact>
+</component>
