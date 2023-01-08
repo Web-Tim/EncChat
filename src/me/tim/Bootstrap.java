@@ -38,7 +38,12 @@ public class Bootstrap {
                     System.out.println("        -help -> See command help.");
                     break;
                 case "-client":
-                    new Client("127.0.0.1", 1337).connect();
+                    String address = "127.0.0.1";
+                    if (args.length > 1 && !args[1].isEmpty()) {
+                        address = args[1];
+                    }
+
+                    new Client(address, 1337).connect();
                     break;
             }
         } else {
